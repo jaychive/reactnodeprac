@@ -6,7 +6,6 @@ const myapp = myexpress();
 const View1 = require('./routers/view1');
 
 myapp.use(mycors());
-myapp.use(myexpress.json());
 myapp.use('/', View1);
 
 myapp.listen('5000', function(){  
